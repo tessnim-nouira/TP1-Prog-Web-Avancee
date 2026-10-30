@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de personne</title>
+</head>
+<body>
+    <h1>Informations personnelles</h1>
+
+    <form action="Form_Servlet" method="post">
+        <p>
+            <label>Prénom :
+                <input type="text" name="firstName" required>
+            </label>
+        </p>
+
+        <p>
+            <label>Nom :
+                <input type="text" name="lastName" required>
+            </label>
+        </p>
+
+        <p>
+            <label>Date de naissance (MM/DD/YYYY) :
+                <input type="text" name="birthDay"
+                       placeholder="04/21/2001" required>
+            </label>
+        </p>
+	<p>
+  		Sexe :
+  		<label><input type="radio" name="sex" value="F"> Féminin</label>
+  		<label><input type="radio" name="sex" value="M"> Masculin</label>
+	</p>
+        <button type="submit">Envoyer</button>
+    </form>
+    <p><a href="ReadCookie">Afficher les cookies enregistrés</a></p>
+    <p><a href="VisitCounter">Compteur de visites</a></p>
+    <p><a href="ShowSession">Afficher les visites de cette session</a></p>
+
+</body>
+</html>
